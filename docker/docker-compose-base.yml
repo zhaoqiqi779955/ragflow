@@ -212,7 +212,7 @@ services:
     restart: unless-stopped
 
   minio:
-    image: pgsty/minio:RELEASE.2026-03-25T00-00-00Z
+    image: hub.byted.org/devbox/minio:89f610e96c4fd79d2501d9bbbbf778d7
     command: ["server", "--console-address", ":9001", "/data"]
     ports:
       - ${MINIO_PORT}:9000
